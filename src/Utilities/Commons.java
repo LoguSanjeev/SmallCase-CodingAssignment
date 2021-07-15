@@ -102,14 +102,17 @@ public class Commons {
 	}
 	
 	public float findCheaperRate(String FlipkartPrice, String AmazonPrice) {
-		if(Float.parseFloat(FlipkartPrice.replaceAll(" ",""))> Float.parseFloat(AmazonPrice.replaceAll(" ", ""))) {
+		Float flipkartPrice=Float.parseFloat(FlipkartPrice.replaceAll("[^0-9.]",""));
+		Float amazonPrice =Float.parseFloat(AmazonPrice.replaceAll("[^0-9.]", ""));
+		
+		if(flipkartPrice> amazonPrice) {
 			System.out.println("The Cheaper Price is from Amazon: ");
-			return Float.parseFloat(AmazonPrice.replaceAll(" ", ""));
+			return amazonPrice;
 			
 		}
 		else {
 			System.out.println("the cheaper price is from Flipkart: ");
-			return Float.parseFloat(FlipkartPrice.replaceAll(" ",""));
+			return flipkartPrice;
 
 		}
 	}

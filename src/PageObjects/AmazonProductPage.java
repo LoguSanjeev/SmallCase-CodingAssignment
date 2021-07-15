@@ -4,9 +4,7 @@ import org.openqa.selenium.By;
 
 public class AmazonProductPage {
 
-	public static By productPriceText= By.id("priceblock_dealprice");
-	public static By addToCartButton= By.id("add-to-cart-button");
-
-	
+	public static By productPriceText = By.xpath("//span[contains(@id,'priceblock')]");
+	public static By addToCartButton = By.id("add-to-cart-button");
 
 }

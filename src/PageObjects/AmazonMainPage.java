@@ -8,4 +8,5 @@ public class AmazonMainPage {
 	public static By searchButton= By.id("nav-search-submit-button");
 	public static By productList=By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']");
 
+	
 }

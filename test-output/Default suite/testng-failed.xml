@@ -7,7 +7,6 @@
         <methods>
           <include name="oneTimeSetUp"/>
           <include name="priceComparisionBetweenFlipKartAndAmazon"/>
-          <include name="flipkartPrintThePriceOfTheProduct"/>
           <include name="teardown"/>
           <include name="setUp"/>
         </methods>

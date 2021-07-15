@@ -17,8 +17,7 @@ public class Tests {
 
 	@BeforeTest
 	public void oneTimeSetUp() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\A1072798\\Desktop\\HRB\\Automation\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver.exe");
 	}
 
 	@BeforeMethod
@@ -80,6 +79,7 @@ public class Tests {
 		common.clickElementFromList(AmazonMainPage.productList, 0);
 
 		common.switchToNextWindow();
+		String s=common.getTextFromElement(AmazonProductPage.productPriceText);
 		System.out.println("Amazon Price of \"" + productName + "\" is: "
 				+ common.getTextFromElement(AmazonProductPage.productPriceText));
 
