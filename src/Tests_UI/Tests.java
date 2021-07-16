@@ -98,7 +98,7 @@ public class Tests {
 
 //Comparing Amazon and Flipkart and Printing the cheaper price
 		System.out.println("=====Cheaper Price====");
-		System.out.println("====="+common.findCheaperRate(FlipkartPrice, AmazonPrice)+"=====");
+		System.out.println("====="+common.findCheaperRate(FlipkartPrice, AmazonPrice)+"=====\n");
 	}
 
 	@AfterMethod
