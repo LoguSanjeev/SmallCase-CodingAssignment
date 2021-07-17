@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import PageObjects.*;
 import Utilities.Commons;
+import Utilities.Constants;
 
 public class Tests {
 	private static WebDriver driver = null;
@@ -32,7 +33,7 @@ public class Tests {
 
 //Launching FlipKart and searching product
 		Commons common = new Commons(driver);
-		common.navigateTo("https://www.flipkart.com/");
+		common.navigateTo(Constants.FLIPKART_URL);
 		common.clickElement(FlipkartMainPage.closeLoginPopupButton);
 		common.setValueToTextBox(FlipkartMainPage.searchBox, productName);
 		common.clickElement(FlipkartMainPage.searchButton);
@@ -58,7 +59,7 @@ public class Tests {
 
 //Launching Flipkart
 		Commons common = new Commons(driver);
-		common.navigateTo("https://www.flipkart.com/");
+		common.navigateTo(Constants.FLIPKART_URL);
 		parentWindow = driver.getWindowHandle();
 		common.clickElement(FlipkartMainPage.closeLoginPopupButton);
 		common.setValueToTextBox(FlipkartMainPage.searchBox, productName);
@@ -81,7 +82,7 @@ public class Tests {
 
 
 //Launching Amazon
-		common.navigateTo("https://www.amazon.in/");
+		common.navigateTo(Constants.AMAZON_URL);
 		common.setValueToTextBox(AmazonMainPage.searchBox, productName);
 		common.clickElement(AmazonMainPage.searchButton);
 		common.clickElementFromList(AmazonMainPage.productList, 0);

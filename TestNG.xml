@@ -5,5 +5,5 @@
     <classes>
       <class name="Tests_UI.Tests"/>     
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 
